@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ruta Verde — Guatemala Nature Tours</title>
+    <meta name="description" content="Private guided tours to the most breathtaking natural places in Central America." />
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- Hidden forms for Netlify bot detection — React submits these via fetch -->
+    <form name="custom-tour" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="bot-field" />
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="tel" name="phone" />
+      <textarea name="destination"></textarea>
+      <input type="text" name="groupSize" />
+      <input type="text" name="dates" />
+    </form>
+    <form name="direct-booking" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="bot-field" />
+      <input type="text" name="tour" />
+      <input type="date" name="date" />
+      <input type="text" name="groupSize" />
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="tel" name="phone" />
+    </form>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
